@@ -1,38 +1,172 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  text-align: center;
+  left: calc(50% - 150px);
+}
+
+
+#login, #register{
+    width: 100%;
+    padding: 5px 15px 30px 15px;
+    background: white;
+}
+
+#register{
+  margin-top: 100px;
+}
+
+.ocultar{
+  display: none;
+}
+
+label{
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  text-align: left;
+}
+
+form{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, select, #pass{
+  width: 100%;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+input:target{
+  border: 1px solid rgb(66, 133, 244);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+    padding: 10px 25px;
+    background: rgb(0, 180, 0);
+    width: 50%;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+button.deshabilitado{
+  background: #666!important;
+}
+
+.sign{
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign a{
+  color: rgb(66, 133, 244);
+  font-weight: bold;
+}
+
+h2{
+  color: black;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.google{
+  background: rgb(66, 133, 244);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+.h-logo{
+  height: 15vh;
+  weight:15vw;
 }
 
-.App-link {
-  color: #61dafb;
+.google div{
+  height: 40px;
+  width: 40px;
+  border: 2px solid rgb(66, 133, 244);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.logo-google{
+  height: 100%;
+  width: 100%;
+}
+
+.google p{
+  width: 100%;
+  margin-left: -40px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.or{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.or .linea{
+  border-top: 1px solid #ccc;
+  width: 45%;
+}
+
+.or span{
+  color: #999;
+  font-size: 14px;
+}
+
+#register form #recommend{
+  text-align: left;
+}
+
+#email2{
+  margin-bottom: 0px;
+}
+
+.recommend{
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+
+}
+
+
+@media screen and (min-width: 786px){
+  #login, #register{
+      padding: 30px;
   }
 }
